@@ -1,7 +1,13 @@
 <div align="center">
  
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2&height=200&section=header&text=Y%20A%20M%20M%20Y&fontSize=90)
+<img width="100%" height="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2&height=200&section=header&text=Y%20A%20M%20M%20Y&fontSize=90" alt="header" />
 </div>
+
+<h3 align="center">✨ Contributors ✨</h3>
+<p align="center">KIM GUNHA</p>
+<p align="center">KIM NAMHOON</p>
+<p align="center">PARK MINSU</p>
+<p align="center">CHOI SUNGBEOM</p>
 
 # Yonsei Ai with hyundai Mobis MobilitY
  
