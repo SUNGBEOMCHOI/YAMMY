@@ -7,7 +7,7 @@
 
 <h4 align="center">✨ Contributors ✨</h4>
 <p align="center">
-<a href="https://github.com/kgh1030"><b>KIM GUNHA</b></a><br>
+<a href="https://github.com/ori-orori"><b>KIM GUNHA</b></a><br>
 <a href="https://github.com/etoilekim"><b>KIM NAMHOON</b></a><br>
 <a href="https://github.com/0601p"><b>PARK MINSU</b></a><br>
 <a href="https://github.com/SUNGBEOMCHOI"><b>CHOI SUNGBEOM</b></a>
