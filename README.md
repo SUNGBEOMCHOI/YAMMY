@@ -62,12 +62,11 @@
 
 ||Clova API|YAMMY|
 |:---|:---:|:---:|
-|---|---|---|
 |Noisy Data|29.20|17.8|
 
 - 화자에 따른 CER
 
-||Clova Call(pre trained)|YAMMY|
+||Clova Call(pre trained)|       YAMMY       |
 |:---|:---:|:---:|
 |여자|128.86|16.01|
 |남자|114.18|23.88|
