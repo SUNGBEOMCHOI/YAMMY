@@ -55,9 +55,9 @@
 <img src="https://user-images.githubusercontent.com/68505714/220413066-cb517248-b008-4ab5-92c8-c9e2a8561681.png" width="30%" height="30%"/>&emsp;&emsp;<img src="https://user-images.githubusercontent.com/68505714/220413072-69444049-7d64-463a-8b07-284c8125f03a.png" width="30%" height="30%"/>&emsp;&emsp;<img src="https://user-images.githubusercontent.com/68505714/220413075-4b5b556e-a368-49ad-808b-3f94992c8325.png" width="30%" height="30%"/>
 </div>
 
-<p align="center">
+
 https://user-images.githubusercontent.com/63270534/220625030-be277b9d-d4be-4c10-bc38-85ed1a8b5c49.mp4
-</p>
+
 
 #### 성능
 
