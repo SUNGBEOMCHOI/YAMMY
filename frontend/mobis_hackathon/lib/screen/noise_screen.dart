@@ -76,7 +76,7 @@ class _NoiseScreenState extends State<NoiseScreen> {
               );
             },
             icon: const Icon(
-              Icons.chevron_right_rounded,
+              Icons.chevron_left_rounded,
             )),
         centerTitle: true,
         backgroundColor: Theme.of(context).backgroundColor,
