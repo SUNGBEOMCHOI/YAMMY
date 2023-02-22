@@ -45,7 +45,8 @@
 - [ClovaCall](https://github.com/SUNGBEOMCHOI/YAMMY/tree/main/ClovaCall) &emsp; [\<paper\>](https://arxiv.org/pdf/2004.09367.pdf)
 
 #### 학습 데이터
-[AIHub 차량 내 대화 및 명령어 AI 데이터](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=112)
+- [AIHub 한국어 음성 데이터](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=123)
+- [AIHub 차량 내 대화 및 명령어 AI 데이터](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=112)
 
 
 #### 결과(시연) 화면
@@ -59,22 +60,22 @@
 
 - 노이즈에 따른 CER
 
-||Clova Call(pre trained)|YAMMY|
+||Clova API|YAMMY|
 |:---|:---:|:---:|
 |---|---|---|
-|Noisy Data|||
-|Clean Data|||
+|Noisy Data|29.20|17.8|
 
 - 화자에 따른 CER
 
 ||Clova Call(pre trained)|YAMMY|
 |:---|:---:|:---:|
-|여자|||
-|남자|||
-|20 ~ 29세|||
-|30 ~ 39세|||
-|40 ~ 49세|||
-|50 ~ 59세|||
+|여자||16.01|
+|남자||23.88|
+|20 ~ 29세||21.04|
+|30 ~ 39세||23.12|
+|40 ~ 49세||12.95|
+|50 ~ 59세||19.13|
+|60 ~ 69세||16.38|
 
 - 노이즈 종류에 따른 CER
 
