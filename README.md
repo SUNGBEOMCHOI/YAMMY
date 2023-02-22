@@ -56,7 +56,7 @@
 </div>
 
 <div align="center">
-https://user-images.githubusercontent.com/63270534/220614326-cf7547c9-d094-4a19-98cb-88fd608da135.mp4
+https://user-images.githubusercontent.com/63270534/220625030-be277b9d-d4be-4c10-bc38-85ed1a8b5c49.mp4
 </div>
 
 #### 성능
