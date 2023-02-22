@@ -43,8 +43,8 @@ logger.addHandler(stream_handler)
 def get_arguments():
     
     config='/root/WaveNet_PyTorch/data/wavenet/config.json'
-    mode='training'
-    load_checkpoint='/root/WaveNet_PyTorch/data/NSDTSEA/checkpoints/config1_epoch0128.pth'
+    mode='inference'
+    load_checkpoint='/root/WaveNet_PyTorch/data/NSDTSEA/checkpoints1/config1_epoch0308.pth'
     condition_value=0
     batch_size=1
     one_shot=False
@@ -171,8 +171,8 @@ def inference(config, args):
 
     load_audio = CarNoiseAugment()
     clean_input = None
-    for filename in filenames[:100]:
-        clean_input, noisy_input = load_audio(filename, config['dataset']['sequence_max_len'], noise_rate = 1)
+    for filename in filenames[:300]:
+        clean_input, noisy_input = load_audio(filename, config['dataset']['sequence_max_len'])
         # noisy_input = util.load_wav(args['noisy_input_path'] + filename, config['dataset']['sample_rate'])
         # if args['clean_input_path'] is not None:
         #     clean_input = util.load_wav(os.path.join(args['clean_input_path'], filename), config['dataset']['sample_rate'])
@@ -199,6 +199,9 @@ def inference(config, args):
         predict_config = models.PredictConfig(model, args['load_checkpoint'])
         denoise.denoise_sample(predict_config, inputs, condition_input, batch_size, output_filename_prefix,
                                             config['dataset']['sample_rate'], output_folder_path)
+
+
+
 
 def main():
 

@@ -2,7 +2,8 @@
 # coding: utf-8
 
 # In[2]:
-
+import sys
+sys.path.append('/root/WaveNet_PyTorch')
 
 import torch.nn.functional as F
 import data.wavenet.util as util
@@ -347,7 +348,7 @@ class TrainingConfig():
             if valid_loss < valid_loss_min:
                 # Save model
                 state = {'model_state':self.model.state_dict(), 'optimizer_state':self.optimizer.state_dict()}
-                torch.save(state, 'data/NSDTSEA/checkpoints/config1_epoch{:04d}.pth'.format(epoch))
+                torch.save(state, 'data/NSDTSEA/checkpoints1/config1_epoch{:04d}.pth'.format(epoch))
                 if epoch != 1:
                     checkpoints = os.listdir(self.checkpoints_path)
                     checkpoints.sort(key=lambda x: os.stat(os.path.join(self.checkpoints_path, x)).st_mtime)
@@ -375,8 +376,8 @@ class TrainingConfig():
     
     def setup_model(self, load_checkpoint=None, print_model_summary=False):
 
-        self.checkpoints_path = os.path.join(self.config['training']['path'], 'checkpoints')
-        self.history_path = os.path.join(self.config['training']['path'], 'history', 'history.pkl')
+        self.checkpoints_path = os.path.join(self.config['training']['path'], 'checkpoints1')
+        self.history_path = os.path.join(self.config['training']['path'], 'history1', 'history.pkl')
 
         if os.path.exists(self.checkpoints_path) and util.dir_contains_files(self.checkpoints_path):
 
@@ -448,10 +449,9 @@ class TrainingConfig():
         target_noise = y['data_output_2']
         output_speech = y_hat[0]
         output_noise = y_hat[1]
-        loss1 = self.out_1_loss(target_speech, output_speech)
-        loss2 = self.out_2_loss(target_noise, output_noise)
+        loss1 = self.out_1_loss(target_speech.detach(), output_speech)
+        loss2 = self.out_2_loss(target_noise.detach(), output_noise)
         loss = loss1 + loss2
-        
         return loss
 
 class PredictConfig():
@@ -467,7 +467,7 @@ class PredictConfig():
             return torch.device('cpu')
         
     def get_trained_model(self):
-        state = torch.load(self.checkpoint_path)
+        state = torch.load(self.checkpoint_path, map_location = self.device)
         self.model.load_state_dict(state['model_state'])
         return self.model
 

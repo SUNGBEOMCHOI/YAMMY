@@ -176,6 +176,5 @@ def write_wav(x, filename, sample_rate):
     with warnings.catch_warnings():
         warnings.simplefilter("error")
         sf.write(filename, x, sample_rate)
-        print(filename)
 
 

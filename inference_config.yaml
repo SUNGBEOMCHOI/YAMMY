@@ -1,0 +1,18 @@
+denoise_model:
+  model_path: /root/WaveNet_PyTorch/data/NSDTSEA/checkpoints/config1_epoch0317.pth
+
+sr_model:
+  cuda: True
+  model_path: /root/ClovaCall/models/aihub_car/LSTM_512x3_512x2_aihub_car/final.pth
+  labels_path: /root/ClovaCall/data/kor_syllable.json
+  sample_rate: 16000
+  window_size: 0.02
+  window_stride: 0.01
+  max_len: 80
+  dropout: 0.3
+  rnn_type: LSTM
+  bidirectional: True
+  encoder_layers: 3
+  encoder_size: 512
+  decoder_layers: 2
+  decoder_size: 512

@@ -1,5 +1,6 @@
 cuda: True
-model_path: /root/ClovaCall/models/aihub_car/LSTM_512x3_512x2_aihub_car/final.pth
+# model_path: /root/ClovaCall/models/aihub_car/LSTM_512x3_512x2_aihub_car/final.pth
+model_path: /root/ClovaCall/models/aihub_car_noise/LSTM_512x3_512x2_aihub_car_noise/final.pth
 labels_path: /root/ClovaCall/data/kor_syllable.json
 sample_rate: 16000
 window_size: 0.02

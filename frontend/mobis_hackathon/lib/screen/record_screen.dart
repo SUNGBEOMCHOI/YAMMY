@@ -6,6 +6,7 @@ import 'package:mobis_hackathon/api/api.dart';
 import 'package:mobis_hackathon/models/voice.dart';
 import 'package:mobis_hackathon/screen/noise_screen.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:intl/intl.dart';
 
 class RecordScreen extends StatefulWidget {
   const RecordScreen({super.key});
@@ -19,6 +20,7 @@ class _RecordScreenState extends State<RecordScreen> {
   bool ispause = true;
   String rawPath = "";
   late Directory appDirectory;
+  String? date;
 
   @override
   void initState() {
@@ -50,6 +52,7 @@ class _RecordScreenState extends State<RecordScreen> {
                           rawPath: rawPath,
                         ),
                       ));
+                  print(rawPath);
                   voice = Voice(rawPath);
                   VoiceAPI.uploadVoice(voice);
                 },
@@ -206,6 +209,7 @@ class _RecordScreenState extends State<RecordScreen> {
   void _stopRecording() async {
     await recorderController.pause();
     await recorderController.stop();
+    // _getDir();
   }
 
   void _pauseRecording() async {
@@ -215,12 +219,13 @@ class _RecordScreenState extends State<RecordScreen> {
   void _resetRecording() async {
     await recorderController.pause();
     recorderController.reset();
+    // _getDir();
   }
 
   void _getDir() async {
     appDirectory = await getApplicationDocumentsDirectory();
-    rawPath = "${appDirectory.path}/raw.m4a";
-    setState(() {});
+    date = DateFormat('yyyyy_MMMM_dd_hh_mm_ss_aaa').format(DateTime.now());
+    rawPath = "${appDirectory.path}/${date}_raw.m4a";
   }
 }
 

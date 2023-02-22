@@ -42,7 +42,7 @@
     },
     "training": {
         "batch_size": 8,
-        "early_stopping_patience": 16,
+        "early_stopping_patience": 200,
         "loss": {
             "out_1": {
                 "l1": 1,
@@ -55,7 +55,7 @@
                 "weight": 1
             }
         },
-        "num_epochs": 250,
+        "num_epochs": 1000,
         "num_test_samples": 100,
         "num_train_samples": 1000,
         "path": "/root/WaveNet_PyTorch/data/NSDTSEA"

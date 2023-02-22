@@ -14,7 +14,7 @@ class CarNoiseAugment:
                 data_dir_path : data 폴더의 경로, 아마 /root/data/aihub_car/data 가 될 것 하위 폴더에 noise 폴더가 있어야함
                 json_file_path : noise.json 파일의 경로, 아마"/root/data/aihub_car/scripts/noise.json"가 될 것
         """
-        print("loading noise")
+        print('Generate Noise Model loaded')
         with open(json_file_path, 'r') as f:
             self.noise = json.load(f)
         self.path = data_dir_path
@@ -43,7 +43,7 @@ class CarNoiseAugment:
             except:
                 pass
             cnt += 1
-            if(cnt >= 100):
+            if(cnt >= 10000):
                 raise NotImplementedError # 목소리가 너무 길 때 충분히 긴 노이즈를 찾을 수 없으면 오류
         
         # multi channel일 때 단일 채널로 정리
@@ -58,7 +58,7 @@ class CarNoiseAugment:
         
         # noise와 voice 더하기
         voice *= origin_rate
-        # voice += noise[:,:voice.size(1)] * noise_rate
+        voice += noise[:,:voice.size(1)] * noise_rate
         
         # 파일 저장
         if save_file:

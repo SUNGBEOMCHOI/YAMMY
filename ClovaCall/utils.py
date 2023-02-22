@@ -63,7 +63,7 @@ class Aihub():
         sub_sub_directory_path_list = os.listdir(directory_path)
         for sub_sub_directory_path in sub_sub_directory_path_list:
             dataset_type = sub_sub_directory_path
-            label_type = 'train' if istrain else 'validation'
+            label_type = 'train' if istrain else 'validation_noisy'
             print(sub_sub_directory_path)
             if dataset_type == 'sec':
                 exist_check_path = f'../data/aihub_car/data/{label_type}/AI비서'
@@ -123,8 +123,8 @@ if __name__ == "__main__":
     #################################
     #              Unzip            #
     #################################
-    # directory_path = '../data/aihub_car_zip/scripts/validation'
-    # new_path = '../data/aihub_car/scripts/validation'
+    # directory_path = '/root/data/aihub_car_origin'
+    # new_path = '/root/data/aihub_car/scripts/validation'
     # Aihub.extract_zip(directory_path, new_path)
         
     #################################
@@ -136,10 +136,10 @@ if __name__ == "__main__":
     #################################
     #    Aihub car label process    #
     #################################
-    # directory_path = '../data/aihub_car/scripts/validation'
-    # wav_directory = './validation'
-    # save_file_path = '../data/aihub_car/scripts/all_validation.json'
-    # Aihub.car_conversation_label_preprocess(directory_path, wav_directory, save_file_path, istrain=False)
+    directory_path = '../data/aihub_car/scripts/validation'
+    wav_directory = './validation_noisy'
+    save_file_path = '../data/aihub_car/scripts/all_validation.json'
+    Aihub.car_conversation_label_preprocess(directory_path, wav_directory, save_file_path, istrain=False)
 
     #################################
     #    Aihub car label process    #
@@ -151,6 +151,6 @@ if __name__ == "__main__":
     #################################
     #    Aihub bus label process    #
     #################################
-    origin_path = '/root/data/aihub_bus/06.지하철,버스/04.버스안'
-    save_file_path = '/root/data/aihub_bus/scripts/sd.json'
-    Aihub.aihub_bus_label_preprocess(origin_path, save_file_path)
+    # origin_path = '/root/data/aihub_bus/06.지하철,버스/04.버스안'
+    # save_file_path = '/root/data/aihub_bus/scripts/sd.json'
+    # Aihub.aihub_bus_label_preprocess(origin_path, save_file_path)

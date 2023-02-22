@@ -1,440 +1,0 @@
-model loaded...
-loading noise
-Dataset loaded...
-Loading model from epoch: 99
-model setup done...
-Training Started....
-  0%|          | 0/151 [00:00<?, ?it/s]100tensor(0.0533, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0672, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0498, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0422, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0476, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0515, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0571, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0644, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0495, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0230, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 100 Train-Loss : 0.050579413771629333 Train-mean-error : 0.02528863586485386
-Epoch - 100 Valid-Loss : 0.051331792026758194 Valid-mean-error : 0.02566615119576454
-  1%|          | 1/151 [04:33<11:23:56, 273.58s/it]100tensor(0.0619, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0397, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0452, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0378, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.1077, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0709, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0545, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0306, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0617, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0241, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 101 Train-Loss : 0.049963027238845825 Train-mean-error : 0.024981051683425903
-Epoch - 101 Valid-Loss : 0.050032347440719604 Valid-mean-error : 0.025015318766236305
-  1%|▏         | 2/151 [09:08<11:21:41, 274.51s/it]100tensor(0.0489, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0488, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0585, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0430, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0653, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0784, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0506, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0407, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0776, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0347, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 102 Train-Loss : 0.049265116453170776 Train-mean-error : 0.024631863459944725
-Epoch - 102 Valid-Loss : 0.04999134689569473 Valid-mean-error : 0.02499791420996189
-  2%|▏         | 3/151 [13:47<11:22:22, 276.64s/it]100tensor(0.0614, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0514, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0655, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0346, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0455, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0258, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0828, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0449, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0663, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0520, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 103 Train-Loss : 0.04880386218428612 Train-mean-error : 0.024401836097240448
-Epoch - 103 Valid-Loss : 0.050026752054691315 Valid-mean-error : 0.025012262165546417
-  3%|▎         | 4/151 [18:31<11:24:29, 279.39s/it]100tensor(0.0501, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0512, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0565, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0499, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0633, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0365, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0719, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0728, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0951, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0782, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 104 Train-Loss : 0.04815852642059326 Train-mean-error : 0.024078724905848503
-Epoch - 104 Valid-Loss : 0.04977661371231079 Valid-mean-error : 0.02488737553358078
-  3%|▎         | 5/151 [23:06<11:16:11, 277.89s/it]100tensor(0.0752, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0508, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0640, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0522, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0479, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0605, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0460, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0343, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0520, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0404, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 105 Train-Loss : 0.04872407019138336 Train-mean-error : 0.024361757561564445
-Epoch - 105 Valid-Loss : 0.04988180100917816 Valid-mean-error : 0.024943014606833458
-  4%|▍         | 6/151 [27:42<11:09:56, 277.21s/it]100tensor(0.0563, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0673, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0542, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0629, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0322, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0241, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0432, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0571, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0313, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0640, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 106 Train-Loss : 0.04808405414223671 Train-mean-error : 0.024042237550020218
-Epoch - 106 Valid-Loss : 0.04789647459983826 Valid-mean-error : 0.023951180279254913
-  5%|▍         | 7/151 [32:18<11:04:37, 276.92s/it]100tensor(0.0287, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0313, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0502, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0305, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0381, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0471, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0501, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0516, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0336, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0533, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 107 Train-Loss : 0.047957710921764374 Train-mean-error : 0.02397851273417473
-Epoch - 107 Valid-Loss : 0.044267438352108 Valid-mean-error : 0.02213153801858425
-  5%|▌         | 8/151 [36:53<10:58:00, 276.09s/it]100tensor(0.0508, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0323, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0278, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0372, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0282, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0585, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0628, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0258, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0676, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0340, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 108 Train-Loss : 0.047773536294698715 Train-mean-error : 0.02388632670044899
-Epoch - 108 Valid-Loss : 0.047365281730890274 Valid-mean-error : 0.02368178218603134
-  6%|▌         | 9/151 [41:29<10:53:43, 276.22s/it]100tensor(0.0774, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0620, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0667, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0587, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0310, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0643, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0331, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0408, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0402, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0348, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 109 Train-Loss : 0.04759689047932625 Train-mean-error : 0.02379804663360119
-Epoch - 109 Valid-Loss : 0.047837644815444946 Valid-mean-error : 0.02391665056347847
-  7%|▋         | 10/151 [46:09<10:51:30, 277.24s/it]100tensor(0.0562, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0415, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0468, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0425, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0331, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0450, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0800, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0376, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0394, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0586, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 110 Train-Loss : 0.046681564301252365 Train-mean-error : 0.02334064617753029
-Epoch - 110 Valid-Loss : 0.04741906002163887 Valid-mean-error : 0.02371056005358696
-  7%|▋         | 11/151 [51:13<11:06:16, 285.54s/it]100tensor(0.0703, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0353, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0457, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0624, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0498, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0367, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0508, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0277, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0694, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0433, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 111 Train-Loss : 0.04720710217952728 Train-mean-error : 0.023603076115250587
-Epoch - 111 Valid-Loss : 0.04699595645070076 Valid-mean-error : 0.023498622700572014
-  8%|▊         | 12/151 [55:52<10:56:27, 283.36s/it]100tensor(0.0332, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0346, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0801, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0435, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0585, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0608, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0448, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0595, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0427, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0578, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 112 Train-Loss : 0.046861033886671066 Train-mean-error : 0.02343020960688591
-Epoch - 112 Valid-Loss : 0.047158531844615936 Valid-mean-error : 0.023579176515340805
-  9%|▊         | 13/151 [1:00:26<10:45:27, 280.63s/it]100tensor(0.0326, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0439, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0277, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0368, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0868, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0583, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0529, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0273, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0395, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0530, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 113 Train-Loss : 0.0469542071223259 Train-mean-error : 0.023476483300328255
-Epoch - 113 Valid-Loss : 0.0451386421918869 Valid-mean-error : 0.0225667767226696
-  9%|▉         | 14/151 [1:05:01<10:37:14, 279.09s/it]100tensor(0.0318, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0829, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0331, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0450, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0365, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0345, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0715, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0268, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0625, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0477, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 114 Train-Loss : 0.04650557041168213 Train-mean-error : 0.02325216867029667
-Epoch - 114 Valid-Loss : 0.043983977288007736 Valid-mean-error : 0.02199077419936657
- 10%|▉         | 15/151 [1:09:36<10:29:35, 277.76s/it]100tensor(0.0523, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0433, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0537, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0346, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0570, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0383, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0424, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0452, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0473, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0516, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 115 Train-Loss : 0.04571260139346123 Train-mean-error : 0.02285594679415226
-Epoch - 115 Valid-Loss : 0.04599687457084656 Valid-mean-error : 0.022998053580522537
- 11%|█         | 16/151 [1:14:12<10:23:56, 277.31s/it]100tensor(0.0412, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0386, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0470, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0568, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0635, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0470, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0605, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0523, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0438, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0547, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 116 Train-Loss : 0.04581732675433159 Train-mean-error : 0.022907866165041924
-Epoch - 116 Valid-Loss : 0.046374429017305374 Valid-mean-error : 0.02318546548485756
- 11%|█▏        | 17/151 [1:18:45<10:16:29, 276.04s/it]100tensor(0.0798, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0434, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0520, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0599, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0499, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0652, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0366, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0566, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0328, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0593, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 117 Train-Loss : 0.04584888741374016 Train-mean-error : 0.022924073040485382
-Epoch - 117 Valid-Loss : 0.04585978388786316 Valid-mean-error : 0.02292967215180397
- 12%|█▏        | 18/151 [1:23:23<10:12:43, 276.42s/it]100tensor(0.0485, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0695, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0578, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0669, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0281, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0379, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0521, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0642, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0542, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0460, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 118 Train-Loss : 0.04576401039958 Train-mean-error : 0.022881681099534035
-Epoch - 118 Valid-Loss : 0.0462031252682209 Valid-mean-error : 0.023103054612874985
- 13%|█▎        | 19/151 [1:27:56<10:06:07, 275.51s/it]100tensor(0.0541, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0558, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0546, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0554, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0490, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0354, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0518, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0707, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0478, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0371, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 119 Train-Loss : 0.04515399411320686 Train-mean-error : 0.022576268762350082
-Epoch - 119 Valid-Loss : 0.04444308206439018 Valid-mean-error : 0.02221851423382759
- 13%|█▎        | 20/151 [1:32:31<10:00:55, 275.23s/it]100tensor(0.0427, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0452, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0551, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0479, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0384, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0460, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0612, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0648, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0464, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0605, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 120 Train-Loss : 0.0451195202767849 Train-mean-error : 0.022559326142072678
-Epoch - 120 Valid-Loss : 0.045042604207992554 Valid-mean-error : 0.022520970553159714
- 14%|█▍        | 21/151 [1:37:07<9:57:15, 275.65s/it] 100tensor(0.0380, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0459, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0410, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0606, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0342, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0364, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0598, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0451, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0375, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0691, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 121 Train-Loss : 0.04458455741405487 Train-mean-error : 0.02229204960167408
-Epoch - 121 Valid-Loss : 0.043339163064956665 Valid-mean-error : 0.021667422726750374
- 15%|█▍        | 22/151 [1:41:41<9:51:30, 275.12s/it]100tensor(0.0580, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0464, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0257, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0563, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0253, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0301, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0574, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0378, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0635, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0546, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 122 Train-Loss : 0.044378653168678284 Train-mean-error : 0.022189220413565636
-Epoch - 122 Valid-Loss : 0.04368454962968826 Valid-mean-error : 0.021842824295163155
- 15%|█▌        | 23/151 [1:46:15<9:46:17, 274.82s/it]100tensor(0.0435, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0357, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0283, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0426, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0357, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0368, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0465, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0464, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0664, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0392, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 123 Train-Loss : 0.04461802542209625 Train-mean-error : 0.022308673709630966
-Epoch - 123 Valid-Loss : 0.04287559911608696 Valid-mean-error : 0.021438108757138252
- 16%|█▌        | 24/151 [1:50:52<9:43:04, 275.47s/it]100tensor(0.0496, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0431, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0419, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0284, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0538, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0403, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0471, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0496, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0575, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0368, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 124 Train-Loss : 0.04486355558037758 Train-mean-error : 0.022431498393416405
-Epoch - 124 Valid-Loss : 0.04173591360449791 Valid-mean-error : 0.02086642198264599
- 17%|█▋        | 25/151 [1:55:28<9:38:50, 275.64s/it]100tensor(0.0350, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0554, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0364, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0535, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0458, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0252, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0413, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0619, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0534, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0338, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 125 Train-Loss : 0.04416641220450401 Train-mean-error : 0.022082222625613213
-Epoch - 125 Valid-Loss : 0.04356482997536659 Valid-mean-error : 0.021782195195555687
- 17%|█▋        | 26/151 [2:00:03<9:33:47, 275.42s/it]100tensor(0.0224, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0368, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0295, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0515, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0425, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0468, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0591, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0494, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0327, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0533, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 126 Train-Loss : 0.04373440891504288 Train-mean-error : 0.021867575123906136
-Epoch - 126 Valid-Loss : 0.04230537265539169 Valid-mean-error : 0.02115125022828579
- 18%|█▊        | 27/151 [2:04:40<9:29:44, 275.68s/it]100tensor(0.0345, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0531, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0426, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0221, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0336, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0369, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0354, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0334, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0515, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0561, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 127 Train-Loss : 0.044094935059547424 Train-mean-error : 0.02204732969403267
-Epoch - 127 Valid-Loss : 0.04099821299314499 Valid-mean-error : 0.020498156547546387
- 19%|█▊        | 28/151 [2:09:16<9:25:37, 275.92s/it]100tensor(0.0401, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0458, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0427, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0419, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0564, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0239, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0313, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0334, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0590, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0252, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 128 Train-Loss : 0.04338497295975685 Train-mean-error : 0.021691717207431793
-Epoch - 128 Valid-Loss : 0.043437398970127106 Valid-mean-error : 0.021718692034482956
- 19%|█▉        | 29/151 [2:13:53<9:21:39, 276.22s/it]100tensor(0.0352, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0313, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0454, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0431, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0744, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0333, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0488, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0278, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0364, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0641, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 129 Train-Loss : 0.04412484169006348 Train-mean-error : 0.022061925381422043
-Epoch - 129 Valid-Loss : 0.04426661506295204 Valid-mean-error : 0.02213258482515812
- 20%|█▉        | 30/151 [2:18:28<9:16:03, 275.73s/it]100tensor(0.0229, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0446, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0438, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0390, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0469, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0462, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0364, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0487, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0269, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0499, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 130 Train-Loss : 0.04360879585146904 Train-mean-error : 0.021803997457027435
-Epoch - 130 Valid-Loss : 0.043606843799352646 Valid-mean-error : 0.02180331014096737
- 21%|██        | 31/151 [2:23:03<9:11:25, 275.71s/it]100tensor(0.0569, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0261, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0343, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0187, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0403, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0405, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0405, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0465, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0365, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0478, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 131 Train-Loss : 0.04364846274256706 Train-mean-error : 0.02182401530444622
-Epoch - 131 Valid-Loss : 0.04125171899795532 Valid-mean-error : 0.020625920966267586
- 21%|██        | 32/151 [2:27:40<9:07:10, 275.89s/it]100tensor(0.0351, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0373, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0422, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0417, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0303, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0505, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0566, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0413, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0800, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0303, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 132 Train-Loss : 0.0430612787604332 Train-mean-error : 0.021530745550990105
-Epoch - 132 Valid-Loss : 0.04426562413573265 Valid-mean-error : 0.0221303291618824
- 22%|██▏       | 33/151 [2:32:15<9:02:33, 275.88s/it]100tensor(0.0351, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0280, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0483, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0550, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0363, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0450, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0561, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0364, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0476, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0439, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 133 Train-Loss : 0.04229610785841942 Train-mean-error : 0.021147530525922775
-Epoch - 133 Valid-Loss : 0.04350614175200462 Valid-mean-error : 0.021750804036855698
- 23%|██▎       | 34/151 [2:36:51<8:57:38, 275.71s/it]100tensor(0.0268, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0437, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0384, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0402, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0570, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0479, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0462, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0315, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0775, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0325, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 134 Train-Loss : 0.041672781109809875 Train-mean-error : 0.02083538845181465
-Epoch - 134 Valid-Loss : 0.04058990254998207 Valid-mean-error : 0.0202938262373209
- 23%|██▎       | 35/151 [2:41:27<8:53:33, 275.98s/it]100tensor(0.0396, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0355, device='cuda:1', grad_fn=<AddBackward0>)
-300tensor(0.0449, device='cuda:1', grad_fn=<AddBackward0>)
-400tensor(0.0486, device='cuda:1', grad_fn=<AddBackward0>)
-500tensor(0.0395, device='cuda:1', grad_fn=<AddBackward0>)
-600tensor(0.0398, device='cuda:1', grad_fn=<AddBackward0>)
-700tensor(0.0297, device='cuda:1', grad_fn=<AddBackward0>)
-800tensor(0.0413, device='cuda:1', grad_fn=<AddBackward0>)
-900tensor(0.0273, device='cuda:1', grad_fn=<AddBackward0>)
-1000tensor(0.0449, device='cuda:1', grad_fn=<AddBackward0>)
-Epoch - 135 Train-Loss : 0.04269762709736824 Train-mean-error : 0.021347835659980774
-Epoch - 135 Valid-Loss : 0.04393693804740906 Valid-mean-error : 0.021969303488731384
- 24%|██▍       | 36/151 [2:46:04<8:49:24, 276.21s/it]100tensor(0.0275, device='cuda:1', grad_fn=<AddBackward0>)
-200tensor(0.0880, device='cuda:1', grad_fn=<AddBackward0>)

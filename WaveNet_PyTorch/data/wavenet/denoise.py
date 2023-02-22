@@ -6,8 +6,10 @@
 
 # A Wavenet For Speech Denoising - Dario Rethage - 19.05.2017
 # Denoise.py
+import sys
+sys.path.append('/root/WaveNet_PyTorch')
 
-from __future__ import division
+# from __future__ import division
 import os
 import data.wavenet.util as util
 import tqdm
@@ -32,7 +34,7 @@ def denoise_sample(predict_config, inputs, condition_input, batch_size, output_f
     noise_output = []
     num_pad_values = 0
     fragment_i = 0
-    for batch_i in tqdm.tqdm(range(0, num_batches)):
+    for batch_i in range(0, num_batches):
 
         if batch_i == num_batches-1: #If its the last batch'
             batch_size = num_fragments - batch_i*batch_size
@@ -78,12 +80,11 @@ def denoise_sample(predict_config, inputs, condition_input, batch_size, output_f
 
     denoised_output = np.array(denoised_output)
     noise_output = np.array(noise_output)
-    print(len(noise_output),len(denoised_output))
+
 
     if num_pad_values != 0:
         denoised_output = denoised_output[:-num_pad_values]
         noise_output = noise_output[:-num_pad_values]
-    print(len(noise_output),len(denoised_output))
     valid_noisy_signal = inputs['noisy'][
                          model.half_receptive_field_length:model.half_receptive_field_length + len(denoised_output)]
 
@@ -110,7 +111,7 @@ def denoise_sample(predict_config, inputs, condition_input, batch_size, output_f
         output_denoised_filename = output_filename_prefix + 'denoised_%ddB.wav' % new_snr_db
         output_noisy_filename = output_filename_prefix + 'noisy_%ddB.wav' % initial_snr_db
     else:
-        output_denoised_filename = output_filename_prefix + 'denoised.wav'
+        output_denoised_filename = output_filename_prefix + '.wav'
         output_noisy_filename = output_filename_prefix + 'noisy.wav'
 
     output_noise_filename = output_filename_prefix + 'noise.wav'
@@ -120,8 +121,8 @@ def denoise_sample(predict_config, inputs, condition_input, batch_size, output_f
     output_noise_filepath = os.path.join(output_path, output_noise_filename)
 
     util.write_wav(denoised_output, output_denoised_filepath, sample_rate)
-    util.write_wav(valid_noisy_signal, output_noisy_filepath, sample_rate)
-    util.write_wav(noise_output, output_noise_filepath, sample_rate)
+    # util.write_wav(valid_noisy_signal, output_noisy_filepath, sample_rate)
+    # util.write_wav(noise_output, output_noise_filepath, sample_rate)
 
 
 # In[ ]:

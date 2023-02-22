@@ -42,6 +42,7 @@ dependencies:
   http_parser: ^4.0.2
   dio: ^5.0.0
   indexed: ^0.0.8
+  intl: ^0.18.0
 
 dev_dependencies:
   flutter_test:

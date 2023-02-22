@@ -9,9 +9,10 @@ import scipy
 import librosa
 import torch
 import torch.nn as nn
+import torchaudio
 
 import label_loader
-from CarNoiseAugment import CarNoiseAugment
+from ClovaCall.las_pytorch.CarNoiseAugment import CarNoiseAugment
 from models import EncoderRNN, DecoderRNN, Seq2Seq
 
 class STT_Model:
@@ -59,21 +60,25 @@ class STT_Model:
 
         self.model = Seq2Seq(self.enc, self.dec)
 
-        print("Loading checkpoint model %s" % self.model_path)
+        # print("Loading checkpoint model %s" % self.model_path)
         state = torch.load(self.model_path)
         self.model.load_state_dict(state['model'])
-        print('Model loaded')
+        # print('Model loaded')
 
         self.model = self.model.to(self.device)
         self.model.eval()
 
-        print(self.model)
-        print("Number of parameters: %d" % Seq2Seq.get_param_size(self.model))
+        # print(self.model)
+        # print("Number of parameters: %d" % Seq2Seq.get_param_size(self.model))
+        print('Speech Recognition Model loaded')
 
+    def generate_noisy_voice(self, audio_path):
+        file_path = audio_path.replace("raw", "noise")
+        audio = self.load_audio(audio_path)
+        torchaudio.save(file_path, torch.Tensor(audio).view(1, -1), 16000)
 
     def parse_audio(self, audio_path):
         y = self.load_audio(audio_path, noise_rate = 0.0)
-
         n_fft = int(self.audio_conf['sample_rate'] * self.audio_conf['window_size'])
         window_size = n_fft
         stride_size = int(self.audio_conf['sample_rate'] * self.audio_conf['window_stride'])
@@ -94,7 +99,6 @@ class STT_Model:
         return spect
 
     def speech_to_text(self, audio_path):
-        print(f"Test data : {audio_path}")
         with torch.no_grad():
             feats = self.parse_audio(audio_path)
             feats = feats.unsqueeze(0).unsqueeze(0)
@@ -108,7 +112,6 @@ class STT_Model:
             logit = torch.stack(logit, dim=1).to(self.device)
             y_hat = logit.max(-1)[1]
             hyp = self.label_to_string(y_hat[0])
-            print(f"Speech Recognition Result : {hyp}")
             return hyp
 
 

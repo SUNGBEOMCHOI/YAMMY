@@ -2,17 +2,19 @@
 # coding: utf-8
 
 # In[ ]:
-
+import sys
+sys.path.append('/root/WaveNet_PyTorch')
 
 import data.wavenet.util as util
 import torch.utils.data as data
 import os
 import numpy as np
 import torch
-from data.wavenet.CarNoiseAugment import CarNoiseAugment
+from data.wavenet.CarNoiseAugment_new import CarNoiseAugment
 import json
 from data.wavenet.audio_folder import make_dataset
 import time
+import random
 
 
 # In[ ]:
@@ -46,11 +48,14 @@ class NSDTSEADataset(data.Dataset):
 
     def __getitem__(self, index):
 
-        while True:
+        sample_snr = [0,5,10,15]
+        snr = random.choice(sample_snr)
 
+        while True:
             file_path = self.audio_paths[index]
             # clean data
-            speech, noisy = self.load_audio(file_path, self.sequence_max_len, noise_rate = 1)
+
+            speech, noisy = self.load_audio(file_path, self.sequence_max_len, snr)
             if util.rms(speech) == 0:
                 index = np.random.randint(0, len(self))
             else:

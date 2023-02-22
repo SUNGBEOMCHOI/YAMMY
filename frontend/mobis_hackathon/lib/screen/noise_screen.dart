@@ -1,16 +1,19 @@
+import 'dart:async';
+
 import 'package:audio_waveforms/audio_waveforms.dart';
 import 'package:flutter/material.dart';
 import 'package:indexed/indexed.dart';
 import 'package:mobis_hackathon/api/api.dart';
 import 'package:mobis_hackathon/models/voice.dart';
+import 'package:mobis_hackathon/screen/record_screen.dart';
 
 class NoiseScreen extends StatefulWidget {
-  const NoiseScreen({
+  NoiseScreen({
     super.key,
     required this.rawPath,
   });
 
-  final String rawPath;
+  String rawPath;
 
   @override
   State<NoiseScreen> createState() => _NoiseScreenState();
@@ -35,16 +38,18 @@ class _NoiseScreenState extends State<NoiseScreen> {
   double yPositionNoise = 150;
   double yPositionDenoise = 300;
   String text = "안녕하세요";
-  String _text = "";
 
   String? noisePath;
-  String? denoisePath = "";
+  String? denoisePath;
+
+  String? fileName;
 
   @override
   void initState() {
     super.initState();
     playerControllerRaw.preparePlayer(path: widget.rawPath);
     final voice = Voice(widget.rawPath);
+    fileName = '${voice.fileName.substring(0, voice.fileName.length - 8)}.wav';
   }
 
   @override
@@ -60,6 +65,19 @@ class _NoiseScreenState extends State<NoiseScreen> {
             color: Colors.white,
           ),
         ),
+        leading: IconButton(
+            onPressed: () {
+              Navigator.of(context).popUntil((route) => route.isFirst);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => (const RecordScreen()),
+                ),
+              );
+            },
+            icon: const Icon(
+              Icons.chevron_right_rounded,
+            )),
         centerTitle: true,
         backgroundColor: Theme.of(context).backgroundColor,
         elevation: 0,
@@ -130,16 +148,6 @@ class _NoiseScreenState extends State<NoiseScreen> {
         ],
       ),
     );
-  }
-
-  void _startTyping(int textLength) {
-    for (int index = 0; index < textLength + 1; index++) {
-      Future.delayed(Duration(milliseconds: 1500 + index * 500), () {
-        setState(() {
-          _text = text.substring(0, index);
-        });
-      });
-    }
   }
 
   AnimatedContainer waveCard({
@@ -263,30 +271,32 @@ class _NoiseScreenState extends State<NoiseScreen> {
               ? InkWell(
                   onTap: () {
                     if (request == "차량 노이즈 추가") {
-                      setState(() {
-                        noiseWaveVisible = true;
-
-                        // TODO noise 백엔드에서 받기
-                        getNoiseWave();
+                      Timer.run(() async {
+                        setState(() {
+                          noiseWaveVisible = true;
+                          getNoiseWave(fileName);
+                        });
                       });
                     } else if (request == "노이즈 제거") {
-                      setState(() {
-                        denoiseWaveVisible = true;
-                        // TODO denoise 백엔드에서 받기
-                        getDenoiseWave();
+                      Timer.run(() async {
+                        setState(() {
+                          denoiseWaveVisible = true;
+                          getDenoiseWave(fileName);
+                        });
                       });
                     } else if (request == "텍스트 변환") {
                       setState(() {
                         textVisible = true;
-                        // TODO 텍스트 백엔드에서 받기
                         Future.delayed(const Duration(milliseconds: 200), () {
-                          setState(() {
+                          Timer.run(() async {
                             textVisible1 = true;
-                            text = VoiceAPI.viewVoice(
-                                requestType: "text", fileName: "/test.wav");
+                            String result = await VoiceAPI.viewVoice(
+                                requestType: "text", fileName: fileName);
+                            setState(() {
+                              text = result;
+                            });
                           });
                         });
-                        // _startTyping(text.length);
                       });
                     }
                   },
@@ -319,27 +329,21 @@ class _NoiseScreenState extends State<NoiseScreen> {
         : await playerController.startPlayer(finishMode: FinishMode.loop);
   }
 
-  void getNoiseWave() async {
-    // 백엔드에서 노이즈 경로 가져오기
-    // await Future.value('DenoisePath').then((result) {
-    //   noisePath = result;
-    // });
+  void getNoiseWave(fileName) async {
     noisePath = await VoiceAPI.viewVoice(
-        requestType: "noise",
-        fileName: voice.fileName,
-        savePath: './noise.wav');
+      requestType: "noise",
+      fileName: fileName,
+      savePath: '${fileName}_noise.wav',
+    );
     playerControllerNoise.preparePlayer(path: noisePath!);
   }
 
-  void getDenoiseWave() async {
-    // 백엔드에서 디노이즈 경로 가져오기
-    // await Future.value('DenoisePath').then((result) {
-    //   // denoisePath = result;
-    // });
+  void getDenoiseWave(voice) async {
     denoisePath = await VoiceAPI.viewVoice(
-        requestType: "noise",
-        fileName: voice.fileName,
-        savePath: './noise.wav');
+      requestType: "denoise",
+      fileName: fileName,
+      savePath: '${fileName}_denoise.wav',
+    );
     playerControllerDenoise.preparePlayer(path: denoisePath!);
   }
 }
