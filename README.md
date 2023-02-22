@@ -36,6 +36,7 @@
 
 #### 프로젝트 프로세스
 <div align="center">
+
 ![pipeline](https://user-images.githubusercontent.com/63270534/220610742-bf791ac6-1f79-41f6-9aa8-b60c1f605745.png)
 </div>
 
