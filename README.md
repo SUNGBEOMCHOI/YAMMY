@@ -37,7 +37,7 @@
 #### 프로젝트 프로세스
 <div align="center">
  
-![Untitled](https://user-images.githubusercontent.com/68505714/220406531-77d82218-7641-4100-a3d8-e79443b87de8.png)
+![pipeline](https://user-images.githubusercontent.com/63270534/220610742-bf791ac6-1f79-41f6-9aa8-b60c1f605745.png)
 </div>
 
 - Pre Processing
