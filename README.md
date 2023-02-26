@@ -3,7 +3,7 @@
 <img width="100%" height="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2&height=200&section=header&animation=fadeIn&fontAlignY=40&text=Y%20A%20M%20M%20Y&fontSize=75" alt="header" />
 </div>
 
-<h3 align="center">🚗 Yonsei Ai with hyundai Mobis MobilitY 🚗</h3>
+<h3 align="center">🥈 Yonsei Ai with hyundai Mobis MobilitY 🥈</h3>
 
 <h4 align="center">✨ Contributors ✨</h4>
 <p align="center">
